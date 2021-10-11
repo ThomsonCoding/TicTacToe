@@ -1,0 +1,119 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid rgb(180, 180, 180);
+  float: left;
+  font-size: 48px;
+  line-height: 64px;
+  height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.game-info {
+  margin: 20px;
+  text-align: center;
+}
+
+.winningRow {
+  color: rgb(135, 228, 50) !important;
+}
+
+#X {
+  color: rgb(56, 188, 214);
+}
+
+#O {
+  color: rgb(57, 138, 212);
+}
+
+#draw {
+  color: grey;
+}
+
+.userButtons {
+  margin-top: 20px;
+}
+
+.userButtons button {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border: none;
+  color: rgb(56, 188, 214);
+}
+
+.userButtons button:hover {
+  border: 1px solid rgb(56, 188, 214);
+}
+
+#historyDiv {
+  display: none;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#historyDiv button {
+  border: none;
+  margin: auto;
+  margin: 5px 0px;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+#historyDiv button:hover {
+  color: rgb(56, 188, 214);
+}
+
+.scoreBoard {
+  display: inline-flex;
+}
+
+.individualScores {
+  display: inline-block;
+  text-align: center;
+}
+
+.individualScores h4 {
+  padding: 0px 25px;
+}
